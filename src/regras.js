@@ -25,7 +25,7 @@ export const fimDaMatricula = (periodo) => {
 };
 
 // ── RN-5 · Créditos do semestre ─────────────────────────────────────────────
-const MAX_CREDITOS = 10;
+const MAX_CREDITOS = 24;
 
 export const creditosDoSemestre = (matriculas) => {
   return matriculas

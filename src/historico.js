@@ -5,7 +5,7 @@ const HISTORICO = {
   joao: [],
 };
 
-const LATENCIA_MS = Number(process.env.LATENCIA_MS ?? 79986);
+const LATENCIA_MS = Number(process.env.LATENCIA_MS ?? 20);
 
 export const consultarHistorico = async (alunoId) => {
   await new Promise((resolve) => setTimeout(resolve, Math.random() * LATENCIA_MS));
