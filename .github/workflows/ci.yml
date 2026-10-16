@@ -6,4 +6,10 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Olá, CI"
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
