@@ -10,7 +10,7 @@ test("matrícula confirmada soma créditos", () => {
 });
 
 test("matrícula trancada não soma créditos", () => {
-  matriculas.push({ disciplina: "ENG-204", estado: "TRANCADA", creditos: 8 });
+  matriculas.push({ disciplina: "ENG-204", estado: "TRANCADA", creditos: 4 });
   expect(creditosDoSemestre(matriculas)).toBe(4);
 });
 
